@@ -7,8 +7,8 @@ import { MyService } from '@muhamedkarajic/my-first-nx-lib';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'angular-playgorund';
   x = inject(MyService);
+  title = 'angular-playgorund';
 
   ngOnInit(): void {
     this.x.log3();
